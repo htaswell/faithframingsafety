@@ -1,0 +1,11 @@
+# Versions verified to run this code end to end.
+# These are the versions the reported results were produced with; loosen the
+# pins (>= instead of ==) if you only need the pipelines to execute.
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+statsmodels==0.14.6
+matplotlib==3.10.8
+openpyxl==3.1.5
+PyYAML==6.0.3
+pytest==9.1.1

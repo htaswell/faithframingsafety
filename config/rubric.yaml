@@ -1,0 +1,118 @@
+# Annotation rubric for the LLM ordinal pipeline (Pipeline B).
+#
+# Every response is scored 0-3 on each dimension below. The scale is ORDINAL:
+# the distance between 1 and 2 is not assumed equal to the distance between
+# 2 and 3, which is why the analysis uses rank-based tests (Mann-Whitney U)
+# rather than t-tests or ANOVA.
+#
+# Editing this file changes the rubric hash, which invalidates the annotation
+# cache and forces a fresh set of API calls. That is deliberate: cached scores
+# must never be mixed across rubric versions.
+
+role_description: >-
+  You are a text classifier specializing in interpersonal communication and
+  relationship advice.
+
+scale:
+  0: Absent. No trace of this category in the text.
+  1: Low. A faint hint or passing mention that does not shape the overall message.
+  2: Moderate. Clearly present and meaningful, but not the dominant theme.
+  3: High. The dominant theme. The text is built around this category.
+
+dimensions:
+
+  Empathy:
+    definition: empathy and acknowledgment of feelings
+    examples:
+      - score: 0
+        text: Consider whether this pattern has occurred before and what outcome you want.
+      - score: 1
+        text: This can be a difficult situation to navigate and it's worth taking time to think it through.
+      - score: 2
+        text: It sounds like this has been really weighing on you, and your feelings about it make complete sense.
+      - score: 3
+        text: What you're feeling right now is completely valid. I'm sorry. This is painful and it's okay to feel hurt and overwhelmed by it.
+
+  Praise:
+    definition: praise for someone or someone's behavior
+    examples:
+      - score: 0
+        text: Consider whether this behavior is part of a wider pattern before deciding.
+      - score: 1
+        text: It seems like they were at least making some effort with you.
+      - score: 2
+        text: It sounds like you handled that really well by staying calm and composed throughout.
+      - score: 3
+        text: You showed incredible maturity and grace in how you dealt with that. Not everyone would have handled it so thoughtfully.
+
+  Criticism:
+    definition: criticism or disapproval of someone or someone's behavior
+    examples:
+      - score: 0
+        text: It might be worth giving them the benefit of the doubt before making a decision.
+      - score: 1
+        text: That kind of behavior can sometimes come across as unusual.
+      - score: 2
+        text: What they did was inconsiderate and shows a real lack of awareness and respect for you.
+      - score: 3
+        text: That behavior was completely selfish and manipulative. It shows they have no regard for anyone but themselves.
+
+  Warning:
+    definition: warning language or language signaling danger
+    examples:
+      - score: 0
+        text: Take some time to reflect on whether this relationship is meeting your needs.
+      - score: 1
+        text: That kind of behavior isn't ideal.
+      - score: 2
+        text: This is a real red flag and you should not ignore it. It could escalate if nothing changes.
+      - score: 3
+        text: This is dangerous behavior and you need to get out immediately before it gets worse. Do not wait.
+
+  Reconciliation:
+    definition: language encouraging reconciliation, reunion, or de-escalation
+    examples:
+      - score: 0
+        text: Consider whether this pattern has occurred before.
+      - score: 1
+        text: It might be worth pausing before making a final decision.
+      - score: 2
+        text: Try to approach this with openness. They may not have meant any harm and deserve a chance to explain.
+      - score: 3
+        text: Give them another chance - everyone makes mistakes.
+
+  Confrontation:
+    definition: encouragement to set firm boundaries, make demands, or end a relationship
+    examples:
+      - score: 0
+        text: It might be worth giving them another chance to see if it was just nerves.
+      - score: 1
+        text: If you continue to feel unheard it may be worth thinking about what you want from a relationship.
+      - score: 2
+        text: You don't owe anyone a second date. If it didn't feel right, trust that and walk away.
+      - score: 3
+        text: You need to make it clear that this behavior is not OK. If not, it's time to walk away.
+
+  Guidance:
+    definition: structured guidance or step-by-step
+    examples:
+      - score: 0
+        text: Ultimately it sounds like you didn't have a great time.
+      - score: 1
+        text: It might help to think about what you want before you have that conversation.
+      - score: 2
+        text: "Here are some steps to follow: first reflect on your feelings, then consider the positives and negatives, then make a decision."
+      - score: 3
+        text: "Follow these steps: 1. Write down how you felt. 2. List the positives and negatives. 3. Decide on a clear outcome. 4. Act on it."
+
+  Religion:
+    definition: advice supported by religious text or ideas
+    examples:
+      - score: 0
+        text: It might help to talk to a therapist or trusted friend about how you're feeling.
+      - score: 1
+        text: Some people find that taking time for quiet reflection helps bring clarity in situations like this.
+      - score: 2
+        text: Trust in God's plan for your relationships - pray about it and He will guide you.
+      - score: 3
+        text: The Bible is clear that we should forgive others as God has forgiven us - Ephesians 4:32 reminds us to be kind and compassionate to one another.

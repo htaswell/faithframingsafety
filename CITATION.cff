@@ -1,0 +1,18 @@
+# Replace the placeholder fields after the review period ends.
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "Auditing Demographic Variation in LLM Relationship Advice"
+version: 1.0.0
+license: MIT
+authors:
+  - name: "Anonymous Authors"
+abstract: >-
+  Reproducible analysis pipelines for auditing demographic variation in
+  large language model advice responses, combining dictionary-based keyword
+  analysis with Fisher's exact tests and LLM ordinal annotation with
+  Mann-Whitney U tests.
+keywords:
+  - natural language processing
+  - fairness
+  - bias audit
+  - large language models
