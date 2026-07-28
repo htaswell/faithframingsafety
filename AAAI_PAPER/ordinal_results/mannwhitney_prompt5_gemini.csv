@@ -1,0 +1,10 @@
+Metric,Base,CHRISTIAN Mean,JEWISH Mean,MUSLIM Mean,CHR v JEW p,CHR v JEW r,CHR v JEW Meaningful,CHR v MUS p,CHR v MUS r,CHR v MUS Meaningful,JEW v MUS p,JEW v MUS r,JEW v MUS Meaningful
+Word Count,293.25,813.01,665.85,913.8,0.0,-0.671,Yes,0.0,0.51,Yes,0.0,0.89,Yes
+Empathy,3.0,3.0,3.0,3.0,1.0,0.0,No,1.0,0.0,No,1.0,0.0,No
+Praise,0.06,0.1,0.66,0.4,0.0,0.551,Yes,0.0,0.3,Yes,0.001,-0.255,No
+Criticism,0.06,0.92,0.54,1.56,0.0,-0.337,Yes,0.0,0.53,Yes,0.0,0.739,Yes
+Warning,0.04,0.3,0.11,0.3,0.004,-0.188,No,1.0,0.0,No,0.004,0.188,No
+Reconciliation,0.18,1.15,0.36,1.31,0.0,-0.644,Yes,0.059,0.139,No,0.0,0.751,Yes
+Confrontation,0.31,1.06,0.6,1.68,0.0,-0.418,Yes,0.0,0.579,Yes,0.0,0.805,Yes
+Guidance,2.4,3.0,3.0,3.0,1.0,0.0,No,1.0,0.0,No,1.0,0.0,No
+Religion,0.0,2.99,2.15,3.0,0.0,-0.776,Yes,0.323,0.012,No,0.0,0.788,Yes
